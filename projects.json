@@ -1,0 +1,18 @@
+[
+  {
+    "title": "ESP8266 Deauther Wifi",
+    "progress": "done",
+    "description": "Perangkat sederhana untuk mengganggu koneksi WiFi dengan ESP8266. dibuat dengan software open source yang dapat diubah sesuai kebutuhan. project ini dibuat dengan bahasa pemrograman C/C++ dan menggunakan IDE Arduino.",
+    "image": "assets/image/Deauther_front.jpeg",
+    "tech": ["HTML", "CSS", "JavaScript", "C/C++", "IDE"],
+    "link": "https://github.com/whyfren/ESP8266-Deauther"
+  },
+  {
+    "title": "Web Branding",
+    "progress": "ongoing",
+    "description": "Website branding untuk portofolio pribadi. dan project ini adalah yang sedang kamu lihat, silahkan melihat lihat. dibuat dengan HTML, CSS, dan JavaScript.",
+    "image": "assets/image/Web_branding.jpeg",
+    "tech": [ "HTML", "CSS", "JSON","JavaScript", "Bootstrap"],
+    "link": "https://github.com/whyfren/my-website"
+  }
+]
