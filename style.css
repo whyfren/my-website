@@ -1,0 +1,63 @@
+body {
+  background: linear-gradient(to bottom right, #f2f2f2, #e6e6e6);
+  color: #222;
+  transition: background 0.5s ease, color 0.5s ease;
+}
+
+body.dark-mode {
+  background: linear-gradient(to bottom right, #1c1c1c, #2a2a2a);
+  color: #f1f1f1;
+}
+
+/* Card Style */
+.card {
+  transition: background 0.5s ease, color 0.5s ease, border-color 0.5s ease;
+}
+
+.card.dark-mode {
+  background-color: #2d2d2d;
+  color: #f1f1f1;
+  border-color: #444;
+}
+
+/* Navbar Style */
+.nav-link {
+  transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #ffffff !important;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 5px;
+}
+
+.nav-link.active {
+  font-weight: bold;
+  border-bottom: 2px solid #0d6efd;
+}
+
+/* Hero Section */
+.hero {
+        min-height: 92vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: linear-gradient(to right, #000000, #434343);
+        color: white;
+        text-align: center;
+        padding: 2rem;
+        transition: background 0.5s ease, color 0.5s ease;
+      }
+      .hero.dark-mode {
+        min-height: 92vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: linear-gradient(to right, #f8f6f6, #434343);
+        color: rgb(8, 8, 8);
+        text-align: center;
+        padding: 2rem;
+      }
+
+
+/* Optional: Navbar, Footer, dll bisa lo tambahin juga */
