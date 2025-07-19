@@ -14,5 +14,13 @@
     "image": "assets/image/Web_branding.jpeg",
     "tech": [ "HTML", "CSS", "JSON","JavaScript", "Bootstrap"],
     "link": "https://github.com/whyfren/my-website"
+  },
+  {
+    "title": "Web Movie Explorer",
+    "progress": "ongoing",
+    "description": "Website untuk eksplorasi film dengan fitur pencarian, detail film, dan rekomendasi. dibuat dengan HTML, CSS, dan JavaScript.",
+    "image": "assets/image/web_movie.jpeg",
+    "tech": ["HTML", "CSS", "JavaScript", "API", "Bootstrap"],
+    "link": "https://github.com/whyfren/movie-explorer-static"
   }
 ]

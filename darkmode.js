@@ -1,25 +1,33 @@
 const toggle = document.getElementById("toggleDark");
 const body = document.body;
 
-toggle.addEventListener("click", () => {
-  body.classList.toggle("dark-mode");
-
-  // Ganti emoji
-  if (body.classList.contains("dark-mode")) {
+// Fungsi buat nge-toggle dark mode
+function applyDarkMode(isDark) {
+  if (isDark) {
+    body.classList.add("dark-mode");
+    document.querySelectorAll('.card, .card-t').forEach(el => {
+      el.classList.add("dark-mode");
+    });
     toggle.innerHTML = "☀️";
     localStorage.setItem("theme", "dark");
   } else {
+    body.classList.remove("dark-mode");
+    document.querySelectorAll('.card, .card-t').forEach(el => {
+      el.classList.remove("dark-mode");
+    });
     toggle.innerHTML = "🌙";
     localStorage.setItem("theme", "light");
   }
+}
+
+// Event saat tombol diklik
+toggle.addEventListener("click", () => {
+  const isDark = !body.classList.contains("dark-mode");
+  applyDarkMode(isDark);
 });
 
-// Apply mode sebelumnya
-window.onload = () => {
-  if (localStorage.getItem("theme") === "dark") {
-    body.classList.add("dark-mode");
-    toggle.innerHTML = "☀️";
-  } else {
-    toggle.innerHTML = "🌙";
-  }
-};
+// Apply mode dari localStorage pas awal halaman dibuka
+window.addEventListener("DOMContentLoaded", () => {
+  const savedTheme = localStorage.getItem("theme");
+  applyDarkMode(savedTheme === "dark");
+});

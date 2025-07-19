@@ -9,71 +9,63 @@
       integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="style.css" />
     <title>Contact</title>
   </head>
   <body>
-    <!-- navigation bar -->
-    <nav
-      class="navbar sticky-top navbar-expand-sm bg-dark border-bottom border-body"
-      data-bs-theme="dark"
-    >
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">WhyFren</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <!-- Untuk layar besar: nav-tabs -->
-          <ul class="navbar-nav nav-tabs d-none d-sm-flex w-100">
-            <li class="nav-item">
-              <a class="nav-link" href="index.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="about.html">About me</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="contact.html"
-                >Contact me</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="projects.html">Projects</a>
-            </li>
-          </ul>
+      <!-- navigation bar -->
+  <nav class="navbar sticky-top navbar-expand-sm bg-dark border-bottom border-body shadow-sm" data-bs-theme="dark">
+    <div class="container-fluid">
+      <!-- Brand -->
+      <a class="navbar-brand fw-bold" href="#">WhyFren 🚀</a>
 
-          <!-- Untuk layar kecil: nav-pills -->
-          <ul
-            class="navbar-nav nav-pills flex-column d-flex d-sm-none w-100 mt-3"
-          >
-            <li class="nav-item">
-              <a class="nav-link px-2" href="index.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link px-2" href="about.html">About me</a>
-            </li>
-            <li class="nav-item">
-              <a
-                class="nav-link active px-2"
-                aria-current="page"
-                href="contact.html"
-                >Contact me</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link px-2" href="projects.html">Projects</a>
-            </li>
-          </ul>
-        </div>
+      <!-- Toggle button -->
+      <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Nav items -->
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <!-- Untuk layar sm ke atas -->
+        <ul class="navbar-nav d-none d-sm-flex me-auto ms-0 nav-tabs">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About Me</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="contact.html">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="projects.html">Projects</a>
+          </li>
+        </ul>
+
+        <!-- Untuk layar kecil -->
+        <ul class="navbar-nav d-flex d-sm-none ms-auto flex-column nav-pills mt-3">
+          <li class="nav-item">
+            <a class="nav-link px-2" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link px-2" href="about.html">About Me</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active px-2" href="contact.html">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link px-2" href="projects.html">Projects</a>
+          </li>
+        </ul>
+
+        <!-- Dark Mode Toggle -->
+        <button id="toggleDark" class="ms-sm-3 mt-3 mt-sm-0" title="Toggle dark mode">
+          🌙
+        </button>
       </div>
-    </nav>
+    </div>
+  </nav>
 
     <!-- contact me -->
     <div class="container-fluid my-5">
@@ -135,7 +127,7 @@
     </div>
 
     <!-- footer -->
-    <footer class="bg-dark text-white text-center py-4">
+    <footer class="footer text-center py-4">
       <div class="container">
         <p class="mb-2">Made with ❤️ by <strong>Frentis Radytia P.</strong></p>
         <div class="d-flex justify-content-center mb-2 gap-3">
@@ -178,5 +170,7 @@
       crossorigin="anonymous"
       type="text/javascript"
     ></script>
+        <script src="darkmode.js" type="text/javascript"></script>
+
   </body>
 </html>

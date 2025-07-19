@@ -1,63 +1,325 @@
-body {
-  background: linear-gradient(to bottom right, #f2f2f2, #e6e6e6);
-  color: #222;
+/* Hero Section */
+.hero {
+  min-height: 92vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to right, #000000, #434343);
+  color: white;
+  text-align: center;
+  padding: 2rem;
   transition: background 0.5s ease, color 0.5s ease;
 }
+.hero.dark-mode {
+  min-height: 92vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to right, #f8f6f6, #434343);
+  color: rgb(8, 8, 8);
+  text-align: center;
+  padding: 2rem;
+}
 
+/* Optional: Navbar, Footer, dll bisa lo tambahin juga */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  transition: all 0.3s ease;
+  min-height: 100vh;
+
+  /* Light mode colors */
+  background-color: #ffffff;
+  color: #333333;
+}
+
+/* Dark mode styles */
 body.dark-mode {
-  background: linear-gradient(to bottom right, #1c1c1c, #2a2a2a);
-  color: #f1f1f1;
+  background-color: #1a1a1a;
+  color: #e0e0e0;
 }
 
-/* Card Style */
-.card {
-  transition: background 0.5s ease, color 0.5s ease, border-color 0.5s ease;
-}
-
-.card.dark-mode {
-  background-color: #2d2d2d;
-  color: #f1f1f1;
-  border-color: #444;
-}
-
-/* Navbar Style */
-.nav-link {
+/* Header */
+.header {
+  background-color: #f8f9fa;
+  padding: 1rem 2rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   transition: all 0.3s ease;
 }
 
-.nav-link:hover {
-  color: #ffffff !important;
-  background-color: rgba(255, 255, 255, 0.1);
-  border-radius: 5px;
+.dark-mode .header {
+  background-color: #2d2d2d;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
 }
 
-.nav-link.active {
+.logo {
+  font-size: 1.5rem;
   font-weight: bold;
-  border-bottom: 2px solid #0d6efd;
+  color: #007bff;
 }
 
-/* Hero Section */
+.dark-mode .logo {
+  color: #4dabf7;
+}
+
+/* Toggle Button */
+#toggleDark {
+  background: none;
+  border: 2px solid #ecdfcc;
+  border-radius: 50px;
+  padding: 8px 16px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+#toggleDark:hover {
+  background-color: #007bff;
+  transform: scale(1.05);
+}
+
+.dark-mode #toggleDark {
+  border-color: #4dabf7;
+}
+
+.dark-mode #toggleDark:hover {
+  background-color: #4dabf7;
+}
+
+/* Main Content */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
 .hero {
-        min-height: 92vh;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        background: linear-gradient(to right, #000000, #434343);
-        color: white;
-        text-align: center;
-        padding: 2rem;
-        transition: background 0.5s ease, color 0.5s ease;
-      }
-      .hero.dark-mode {
-        min-height: 92vh;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        background: linear-gradient(to right, #f8f6f6, #434343);
-        color: rgb(8, 8, 8);
-        text-align: center;
-        padding: 2rem;
-      }
+  text-align: center;
+  padding: 3rem 0;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  background: linear-gradient(45deg, #007bff, #28a745);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.dark-mode .hero h1 {
+  background: linear-gradient(45deg, #4dabf7, #51cf66);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  opacity: 0.8;
+}
+
+/* Card Components */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin: 3rem 0;
+}
+
+.card-t {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  border: 1px solid #e9ecef;
+}
+
+.card-t:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.card-t.dark-mode {
+  background-color: #2d2d2d;
+  border-color: #404040;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.dark-mode .card-t:hover {
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+}
+
+.card-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.card-t h3 {
+  color: #007bff;
+  margin-bottom: 1rem;
+}
+
+.dark-mode .card-t h3 {
+  color: #4dabf7;
+}
+
+.text-capitalize {
+  text-transform: capitalize;
+}
+
+.text-muted {
+  color: #6c757d;
+}
+
+/* Project Cards */
+.project-card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  border: 1px solid #e9ecef;
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.dark-mode .project-card {
+  background-color: #2d2d2d;
+  border-color: #404040;
+}
+
+.project-card .card-img-top {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-bottom: 1px solid #e9ecef;
+}
+
+.dark-mode .project-card .card-img-top {
+  border-color: #404040;
+}
+
+.project-card .card-body {
+  padding: 1.5rem;
+}
+
+.project-card .card-title {
+  color: #333;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.dark-mode .project-card .card-title {
+  color: #e0e0e0;
+}
+
+.project-card .card-text {
+  color: #6c757d;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
+
+.dark-mode .project-card .card-text {
+  color: #adb5bd;
+}
+
+/* Base styling kalau pengen smooth transition */
+.card,
+.card-t {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* DARK MODE START */
+.card.dark-mode,
+.card-t.dark-mode {
+  background-color: #2d2d2d !important; /* gelap elegan */
+  color: #f1f1f1;
+}
+
+.card.dark-mode .card-title,
+.card-t.dark-mode .card-title {
+  color: #ffffff;
+}
+
+/* Biar <ul> atau <li> tetap enak dibaca */
+.card.dark-mode ul li,
+.card-t.dark-mode ul li {
+  color: #e0e0e0;
+}
+
+.card.dark-mode p,
+.card-t.dark-mode p {
+  color: #dcdcdc;
+}
+
+/* Quotes section */
+.dark-mode .fst-italic {
+  color: #cccccc;
+}
+
+/* Optional: Ganti warna background global (misal section atau body) */
+body.dark-mode {
+  background-color: #121212;
+  color: #eaeaea;
+}
+
+/* Bootstrap override buat elemen yang masih pakai bg-light atau bg-white */
+.card.dark-mode.bg-light,
+.card.dark-mode.bg-white {
+  background-color: #2a2a3b !important;
+}
 
 
-/* Optional: Navbar, Footer, dll bisa lo tambahin juga */
+/* Footer */
+.footer {
+  background-color: #f8f9fa;
+  padding: 2rem;
+  text-align: center;
+  margin-top: 3rem;
+  border-top: 1px solid #e9ecef;
+  transition: all 0.3s ease;
+}
+
+.dark-mode .footer {
+  background-color: #2d2d2d;
+  border-color: #404040;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .container {
+    padding: 1rem;
+  }
+
+  .header {
+    padding: 1rem;
+  }
+}
+
+/* Smooth transitions for all elements */
+* {
+  transition: background-color 0.3s ease, color 0.3s ease,
+    border-color 0.3s ease;
+}
