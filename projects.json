@@ -10,17 +10,19 @@
   {
     "title": "Web Branding",
     "progress": "ongoing",
-    "description": "Website branding untuk portofolio pribadi. dan project ini adalah yang sedang kamu lihat, silahkan melihat lihat. dibuat dengan HTML, CSS, dan JavaScript.",
+    "description": "Website branding untuk portofolio pribadi. dan project ini adalah yang sedang kamu lihat, silahkan melihat lihat. dibuat dengan HTML, CSS, Bootstrap, dan JavaScript.",
     "image": "assets/image/Web_branding.jpeg",
     "tech": [ "HTML", "CSS", "JSON","JavaScript", "Bootstrap"],
-    "link": "https://github.com/whyfren/my-website"
+    "link": "https://github.com/whyfren/my-website",
+    "website": "https://whyfren.netlify.app/"
   },
   {
     "title": "Web Movie Explorer",
     "progress": "ongoing",
-    "description": "Website untuk eksplorasi film dengan fitur pencarian, detail film, dan rekomendasi. dibuat dengan HTML, CSS, dan JavaScript.",
-    "image": "assets/image/web_movie.jpeg",
+    "description": "Website untuk eksplorasi film dengan fitur pencarian, detail film, dan rekomendasi. dibuat dengan HTML, Bootstrap, API dari TMBD dan JavaScript.",
+    "image": "assets/image/movie-explorer.jpeg",
     "tech": ["HTML", "CSS", "JavaScript", "API", "Bootstrap"],
-    "link": "https://github.com/whyfren/movie-explorer-static"
+    "link": "https://github.com/whyfren/movie-explorer-static",
+    "website": "https://whyfren-movie-explorer.netlify.app/"
   }
 ]
