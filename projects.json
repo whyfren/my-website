@@ -13,7 +13,7 @@
     "progress": "ongoing",
     "description": "Website branding untuk portofolio pribadi. dan project ini adalah yang sedang kamu lihat, silahkan melihat lihat. dibuat dengan HTML, CSS, Bootstrap, dan JavaScript.",
     "image": "assets/image/Web_branding.jpeg",
-    "tech": [ "HTML", "CSS", "JSON","JavaScript", "Bootstrap"],
+    "tech": ["HTML", "CSS", "JSON", "JavaScript", "Bootstrap"],
     "link": "https://github.com/whyfren/my-website",
     "website": "https://whyfren.netlify.app/"
   },
@@ -25,5 +25,13 @@
     "tech": ["HTML", "CSS", "JavaScript", "API", "Bootstrap"],
     "link": "https://github.com/whyfren/movie-explorer-static",
     "website": "https://whyfren-movie-explorer.netlify.app/"
+  },
+  {
+    "title": "Pixel Flappy Bird",
+    "progress": "done",
+    "description": "Game sederhana bergaya pixelated yang terinspirasi dari Flappy Bird. Dibuat dengan Python dan library Pygame. Pemain mengontrol burung untuk melewati celah pipa tanpa menabrak.",
+    "image": "assets/image/pixel-flappybird.png",
+    "tech": ["Python", "Pygame"],
+    "link": "https://github.com/whyfren/pygame-flappybird"
   }
 ]

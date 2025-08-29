@@ -1,0 +1,78 @@
+[
+  {
+    "title": "Web Development",
+    "price": "1jt",
+    "unit": "/proyek",
+    "note": "Mulai dari",
+    "features": [
+      { "text": "Desain Responsif", "included": true },
+      { "text": "Halaman Landing Page", "included": true },
+      { "text": "Optimasi SEO Dasar", "included": true },
+      { "text": "Sistem Manajemen Konten (CMS)", "included": false }
+    ],
+    "buttonText": "Pilih Paket Basic",
+    "headerClass": "bg-primary",
+    "buttonClass": "btn-outline-primary"
+  },
+  {
+    "title": "Desain Grafis",
+    "price": "500rb",
+    "unit": "/paket",
+    "note": "Mulai dari",
+    "features": [
+      { "text": "Desain Logo (3 Opsi)", "included": true },
+      { "text": "Desain Kartu Nama", "included": true },
+      { "text": "Palet Warna & Font", "included": true },
+      { "text": "File Master (AI/PSD)", "included": true }
+    ],
+    "buttonText": "Pilih Paket Branding",
+    "headerClass": "bg-success",
+    "buttonClass": "btn-outline-success"
+  },
+  {
+    "title": "Jasa Makalah & PPT",
+    "price": "20rb",
+    "unit": "/tugas",
+    "note": "Harga mulai dari (tergantung kompleksitas)",
+    "features": [
+      { "text": "Makalah sesuai tema", "included": true },
+      { "text": "Riset Materi", "included": true },
+      { "text": "Format Rapi (Word / PDF)", "included": true },
+      { "text": "Presentasi PPT (opsional)", "included": true }
+    ],
+    "buttonText": "Pesan Sekarang",
+    "headerClass": "bg-info",
+    "buttonClass": "btn-outline-info"
+  },
+  {
+    "title": "Editing & Desain Konten",
+    "price": "100rb",
+    "unit": "/paket",
+    "note": "Untuk kebutuhan media sosial",
+    "features": [
+      { "text": "Video Editing Basic", "included": true },
+      { "text": "Desain Feed / Poster", "included": true },
+      { "text": "Canva Template Kustom", "included": true },
+      { "text": "Thumbnail YouTube", "included": true }
+    ],
+    "buttonText": "Pesan Paket Konten",
+    "headerClass": "bg-danger",
+    "buttonClass": "btn-outline-danger"
+  },
+  {
+    "title": "Private Coding Lesson",
+    "price": "150rb",
+    "unit": "/sesi",
+    "note": "Belajar HTML, CSS, JS, Python, dll",
+    "features": [
+      { "text": "Materi Sesuai Level", "included": true },
+      { "text": "Belajar React.js & Tailwind CSS", "included": true },
+      { "text": "Praktik Langsung Bikin Proyek", "included": true },
+      { "text": "Bimbingan Online/Offline", "included": true }
+    ],
+    "buttonText": "Daftar Kelas Coding",
+    "buttonlink": "https://wa.me/6281234567890?text=Halo%20saya%20ingin%20daftar%20kelas%20coding",
+    "headerClass": "bg-dark",
+    "buttonClass": "btn-outline-secondary"
+  }
+]
